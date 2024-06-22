@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+</head>
+<body>
+    <h1>Past Uploads</h1>
+    {% for image in images %}
+        <div>
+            <img src="{{ url_for('result', filename=image) }}" alt="{{ image }}" width="300">
+            <p>{{ image }}</p>
+        </div>
+    {% endfor %}
+    <a href="/">Go back</a>
+</body>
+</html>

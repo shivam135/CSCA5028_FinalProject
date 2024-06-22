@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Processed Image</title>
+</head>
+<body>
+    <h1>Processed Image</h1>
+    <img src="{{ url_for('static', filename='results/' + image_filename) }}" alt="Processed Image">
+    <br>
+    <a href="/">Upload Another Image</a>
+</body>
+</html>
